@@ -23,5 +23,14 @@ namespace Modules.Tests
 
             CollectionAssert.AreEqual(actual, expected);
         }
+
+        [TestMethod]
+        public void IsNumberHighestRanked()
+        {
+            var actual = HighestRankNumberInArray.HighestRank(new int[] { 12, 10, 8, 12, 7, 6, 4, 10, 12 });
+            var expected = 12;
+
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
